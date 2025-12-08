@@ -28,7 +28,7 @@ export default function Sell() {
       <HeaderBlock
         label="Продать товар"
         arrow_back={arrowBack}
-        custom_class="sell_header"
+        custom_class="back_header"
         onClick={onBack}
       />
       <div className="sell_filter_block">

@@ -4,6 +4,7 @@ import Footer from "@components/Footer";
 import Home from "@pages/Home";
 import Profile from "@pages/Profile";
 import Sell from "@pages/Sell";
+import Bonuses from "@pages/Bonuses";
 
 import ThemeProvider from "@/context/Theme/ThemeProvider";
 
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/sell" element={<Sell />} />
+            <Route path="/bonus-center" element={<Bonuses />} />
           </Routes>
         </main>
         <Footer />
