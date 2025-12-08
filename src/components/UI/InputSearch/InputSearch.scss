@@ -1,3 +1,5 @@
+@use "@/styles/mixins.scss" as *;
+
 .pfb_input {
   width: 100%;
   border-radius: 0.75rem;
@@ -15,4 +17,18 @@
   max-width: 572px;
   min-width: 500px;
   gap: 5px;
+  
+  @include lg {
+    min-width: 300px;
+  }
+  
+  @include md {
+    min-width: 200px;
+    max-width: 100%;
+    flex: 1;
+  }
+  
+  @include sm {
+    min-width: 100%;
+  }
 }

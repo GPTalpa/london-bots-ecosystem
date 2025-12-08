@@ -1,7 +1,13 @@
+@use "@/styles/mixins.scss" as *;
+
 .premiumProduct-blocks {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
+  @include md {
+    gap: 15px;
+  }
 }
 
 .premiumProduct-content {
@@ -11,6 +17,26 @@
   flex-shrink: 0;
   -webkit-box-align: stretch;
   align-items: stretch;
+  
+  @include xl {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    gap: 1.5rem 1rem;
+  }
+  
+  @include lg {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 1.25rem 1rem;
+  }
+  
+  @include md {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 1rem 0.75rem;
+  }
+  
+  @include sm {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    gap: 1rem;
+  }
 }
 
 .premiumProduct-btn {

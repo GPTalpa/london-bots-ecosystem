@@ -1,3 +1,5 @@
+@use "@/styles/mixins.scss" as *;
+
 /* basic popup styles */
 .popup-overlay {
   position: fixed;
@@ -9,6 +11,15 @@
   z-index: 1000;
   padding: 20px;
   backdrop-filter: blur(2px);
+  
+  @include md {
+    padding: 15px;
+  }
+  
+  @include sm {
+    padding: 10px;
+    align-items: flex-end;
+  }
 }
 
 .popup {
@@ -22,6 +33,15 @@
   outline: none;
   transform: translateY(-6px);
   animation: popupIn 160ms ease-out forwards;
+  
+  @include md {
+    max-width: 90%;
+  }
+  
+  @include sm {
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
 }
 
 @keyframes popupIn {
@@ -73,6 +93,11 @@
   max-height: 70vh;
   overflow: auto;
   text-align: center;
+  
+  @include sm {
+    max-height: 60vh;
+    padding: 12px;
+  }
 }
 
 .appsSectionBtn.popup_btn {

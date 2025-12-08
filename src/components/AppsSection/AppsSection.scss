@@ -1,22 +1,44 @@
+@use "@/styles/mixins.scss" as *;
+
 .appsSection-blocks {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
+  @include md {
+    gap: 15px;
+  }
 
   &__top {
     display: flex;
-    // gap: 57px;
+    gap: 20px;
+    
+    @include lg {
+      flex-direction: column;
+      gap: 20px;
+    }
 
     & > .appsSection-blocks__left {
-      //   flex: 0 0 calc(60% - 10px);
+      flex: 1;
+      
       .header-block {
         margin-left: 3%;
+        
+        @include md {
+          margin-left: 0;
+        }
       }
     }
 
     & > .appsSection-blocks__right {
+      flex: 1;
+      
       .header-block {
         margin-left: 3%;
+        
+        @include md {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -30,5 +52,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
+    
+    @include md {
+      gap: 12px;
+    }
+    
+    @include sm {
+      gap: 10px;
+      justify-content: flex-start;
+    }
   }
 }
