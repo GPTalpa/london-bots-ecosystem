@@ -1,0 +1,17 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg"
+    data-sentry-component="IconSteamDark" data-sentry-source-file="IconSteamDark.tsx">
+    <g clip-path="url(#clip0_1526_28035)" data-sentry-element="g" data-sentry-source-file="IconSteamDark.tsx">
+        <path
+            d="M0.478452 15.4516C1.96259 20.3969 6.55358 24 11.9871 24C18.6216 24 24 18.6273 24 12C24 5.3726 18.6216 0 11.9871 0C5.6207 0 0.411428 4.94719 0 11.2028C0 13 0 13.75 0.478452 15.4516Z"
+            fill="#6E7485" data-sentry-element="path" data-sentry-source-file="IconSteamDark.tsx"></path>
+        <path
+            d="M11.6548 8.75738L8.6442 13.1453C7.93449 13.1129 7.22004 13.3145 6.62699 13.7058L0.0160867 10.9753C0.0160867 10.9753 -0.136885 13.5003 0.500612 15.3821L5.17416 17.3169C5.40881 18.3691 6.12821 19.292 7.18957 19.736C8.92603 20.4639 10.9282 19.6342 11.6506 17.8912C11.8386 17.4356 11.9263 16.9577 11.9135 16.4809L16.3269 13.3943C18.9048 13.3943 21 11.2857 21 8.69628C21 6.10667 18.9048 4 16.3269 4C13.837 4 11.5153 6.1812 11.6548 8.75738ZM10.9314 17.5882C10.3723 18.9349 8.82986 19.5738 7.48905 19.0133C6.87052 18.7548 6.40353 18.2811 6.13412 17.7164L7.65539 18.3489C8.6442 18.7622 9.77862 18.2917 10.1896 17.2999C10.602 16.3071 10.1342 15.167 9.14594 14.7538L7.57336 14.1C8.18014 13.869 8.87 13.8606 9.51454 14.1297C10.1643 14.4009 10.6685 14.9117 10.9356 15.5643C11.2029 16.2171 11.2018 16.9376 10.9314 17.5882ZM16.3269 11.8261C14.6108 11.8261 13.2136 10.4222 13.2136 8.69628C13.2136 6.97179 14.6108 5.56745 16.3269 5.56745C18.0441 5.56745 19.4412 6.97179 19.4412 8.69628C19.4412 10.4222 18.0441 11.8261 16.3269 11.8261ZM13.994 8.69151C13.994 7.39326 15.0417 6.34021 16.3321 6.34021C17.6238 6.34021 18.6713 7.39326 18.6713 8.69151C18.6713 9.98995 17.6238 11.042 16.3321 11.042C15.0417 11.042 13.994 9.98995 13.994 8.69151Z"
+            fill="white" data-sentry-element="path" data-sentry-source-file="IconSteamDark.tsx"></path>
+    </g>
+    <defs data-sentry-element="defs" data-sentry-source-file="IconSteamDark.tsx">
+        <clipPath id="clip0_1526_28035" data-sentry-element="clipPath" data-sentry-source-file="IconSteamDark.tsx">
+            <rect width="24" height="24" fill="white" data-sentry-element="rect"
+                data-sentry-source-file="IconSteamDark.tsx"></rect>
+        </clipPath>
+    </defs>
+</svg>

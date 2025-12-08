@@ -1,0 +1,8 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg"
+    data-sentry-component="IconYuMoneyLogo" data-sentry-source-file="IconYuMoneyLogo.tsx">
+    <path
+        d="M18.9918 5.21777C13.5501 5.21777 9.17725 9.61995 9.17725 15.0004C9.17725 20.4252 13.5931 24.783 18.9905 24.783C24.3879 24.783 28.8077 20.3808 28.8077 15.0004C28.8077 9.61995 24.3892 5.21777 18.9918 5.21777ZM18.9918 18.6467C16.9844 18.6467 15.3344 17.0013 15.3344 15.0004C15.3344 12.9995 16.9844 11.3541 18.9918 11.3541C20.9992 11.3541 22.6499 12.9995 22.6499 15.0004C22.6049 17.0013 20.9992 18.6467 18.9918 18.6467Z"
+        fill="#8B3FFD" data-sentry-element="path" data-sentry-source-file="IconYuMoneyLogo.tsx"></path>
+    <path d="M9.17752 8.05957V22.2887H5.70013L1.23926 8.05957H9.17752Z" fill="#8B3FFD" data-sentry-element="path"
+        data-sentry-source-file="IconYuMoneyLogo.tsx"></path>
+</svg>

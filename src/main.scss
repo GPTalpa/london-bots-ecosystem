@@ -1,0 +1,71 @@
+// Вместо @import используем @use
+@use "./reset.scss" as *;
+
+/* Root variables */
+:root {
+  --container-max-width: 1560px; // 1520px
+  --container-padding: 1.25rem; // 20px
+  --bg-color: #14161a;
+  --font-family: "Roboto", Arial, sans-serif;
+  --text-color: #ffffff;
+}
+
+/* Global body styles */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: white;
+}
+
+.dark {
+  background-color: var(--bg-color);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+/* Container */
+.container {
+  max-width: var(--container-max-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.light-mode {
+  color: black;
+  &--second-color {
+    color: rgb(130, 135, 148);
+  }
+  &--bg {
+    background: #f2f2f7;
+  }
+}

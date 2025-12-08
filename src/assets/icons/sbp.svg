@@ -1,0 +1,19 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg"
+    data-sentry-component="IconSBPLogo" data-sentry-source-file="IconSBPLogo.tsx">
+    <path d="M3.07715 5.98438L5.87176 10.9796V14.0265L3.08042 19.0119L3.07715 5.98438Z" fill="#5B57A2"
+        data-sentry-element="path" data-sentry-source-file="IconSBPLogo.tsx"></path>
+    <path d="M13.8071 9.16176L16.4258 7.55676L21.785 7.55176L13.8071 12.4391V9.16176Z" fill="#D90751"
+        data-sentry-element="path" data-sentry-source-file="IconSBPLogo.tsx"></path>
+    <path d="M13.7922 5.95557L13.807 12.569L11.0059 10.8479V0.961914L13.7922 5.95557Z" fill="#FAB718"
+        data-sentry-element="path" data-sentry-source-file="IconSBPLogo.tsx"></path>
+    <path d="M21.7849 7.55249L16.4255 7.55749L13.7922 5.95557L11.0059 0.961914L21.7849 7.55249Z" fill="#ED6F26"
+        data-sentry-element="path" data-sentry-source-file="IconSBPLogo.tsx"></path>
+    <path d="M13.807 19.0397V15.831L11.0059 14.1426L11.0074 24.0383L13.807 19.0397Z" fill="#63B22F"
+        data-sentry-element="path" data-sentry-source-file="IconSBPLogo.tsx"></path>
+    <path d="M16.4195 17.4492L5.87157 10.9796L3.07715 5.98438L21.7739 17.4426L16.4195 17.4492Z" fill="#1487C9"
+        data-sentry-element="path" data-sentry-source-file="IconSBPLogo.tsx"></path>
+    <path d="M11.0078 24.0389L13.807 19.0403L16.4192 17.4499L21.7736 17.4434L11.0078 24.0389Z" fill="#017F36"
+        data-sentry-element="path" data-sentry-source-file="IconSBPLogo.tsx"></path>
+    <path d="M3.08008 19.0118L11.0287 14.1425L8.35642 12.5029L5.87142 14.0264L3.08008 19.0118Z" fill="#984995"
+        data-sentry-element="path" data-sentry-source-file="IconSBPLogo.tsx"></path>
+</svg>

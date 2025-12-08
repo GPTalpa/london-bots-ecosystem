@@ -1,0 +1,15 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg"
+    data-sentry-component="IconChatDark" data-sentry-source-file="IconChatDark.tsx">
+    <path
+        d="M16 9C19.866 9 23 12.134 23 16V22.2632C23 22.6701 22.6701 23 22.2632 23H17.2045L15.4592 22.9794C12.4534 22.7497 9.97867 20.6218 9.23147 17.792C9.07791 17.0911 9.03864 16.699 9 15.9997C9.00016 12.1338 12.1341 9 16 9Z"
+        fill="#373948" data-sentry-element="path" data-sentry-source-file="IconChatDark.tsx"></path>
+    <path
+        d="M10.5 1C5.25329 1 1 5.25329 1 10.5V19C1 19.5523 1.44772 20 2 20H8.86528L11.234 19.9721C15.3132 19.6604 18.6718 16.7724 19.6859 12.9319C19.8943 11.9808 19.9476 11.4487 20 10.4996C19.9998 5.25307 15.7466 1 10.5 1Z"
+        fill="#6E7485" data-sentry-element="path" data-sentry-source-file="IconChatDark.tsx"></path>
+    <circle cx="7" cy="11" r="1" fill="white" data-sentry-element="circle" data-sentry-source-file="IconChatDark.tsx">
+    </circle>
+    <circle cx="10" cy="11" r="1" fill="white" data-sentry-element="circle" data-sentry-source-file="IconChatDark.tsx">
+    </circle>
+    <circle cx="13" cy="11" r="1" fill="white" data-sentry-element="circle" data-sentry-source-file="IconChatDark.tsx">
+    </circle>
+</svg>

@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 91px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  gap: 2rem;
+  border-bottom: 0.0625rem solid rgb(33, 34, 40);
+  &-dark {
+    background-color: #14161a;
+    color: #fff;
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo-link {
+    width: 6.60714rem;
+    height: 3.125rem;
+
+    .logo {
+      width: 100%;
+    }
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      background-color: #ccc;
+      border-radius: 34px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: 0.4s;
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+    }
+
+    input:checked + .slider {
+      background-color: #2196f3;
+
+      &:before {
+        transform: translateX(20px);
+      }
+    }
+  }
+
+  &-search {
+    position: relative;
+    width: 100%;
+    input {
+      height: 2.75rem;
+      width: 100%;
+      padding: 5px 30px 5px 30px;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      background-color: rgb(33, 34, 40);
+      border-radius: 0.75rem;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &-nav {
+    display: flex;
+    gap: 50px;
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      font-size: 12px;
+      gap: 7px;
+    }
+  }
+}
+
+.header-light {
+  input {
+    background-color: rgb(245, 245, 245);
+  }
+
+  .nav-item {
+    color: rgb(130, 135, 148);
+  }
+}

@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg"
+    data-sentry-component="IconEmptyDark" data-sentry-source-file="IconEmptyDark.tsx">
+    <path
+        d="M30 45.5H18C7.14 45.5 2.5 40.86 2.5 30V18C2.5 7.14 7.14 2.5 18 2.5H30C40.86 2.5 45.5 7.14 45.5 18V30C45.5 40.86 40.86 45.5 30 45.5Z"
+        fill="#30323B" data-sentry-element="path" data-sentry-source-file="IconEmptyDark.tsx"></path>
+    <path
+        d="M21.2799 14.505C20.8999 14.505 20.5199 14.645 20.2199 14.945C18.7999 16.365 16.4799 16.365 15.0599 14.945C14.4799 14.365 13.5199 14.365 12.9399 14.945C12.3599 15.525 12.3599 16.485 12.9399 17.065C15.5199 19.645 19.7399 19.645 22.3399 17.065C22.9199 16.485 22.9199 15.525 22.3399 14.945C22.0399 14.645 21.6599 14.505 21.2799 14.505Z"
+        fill="white" data-sentry-element="path" data-sentry-source-file="IconEmptyDark.tsx"></path>
+    <path
+        d="M26.7196 14.505C26.3396 14.505 25.9596 14.645 25.6596 14.945C25.0796 15.525 25.0796 16.485 25.6596 17.065C28.2396 19.645 32.4596 19.645 35.0596 17.065C35.6396 16.485 35.6396 15.525 35.0596 14.945C34.4796 14.365 33.5196 14.365 32.9396 14.945C31.5196 16.365 29.1996 16.365 27.7796 14.945C27.4996 14.645 27.1196 14.505 26.7196 14.505Z"
+        fill="white" data-sentry-element="path" data-sentry-source-file="IconEmptyDark.tsx"></path>
+    <path
+        d="M31.2 36.8996H16.8C14.98 36.8996 13.5 35.4196 13.5 33.5996C13.5 27.8196 18.2 23.0996 24 23.0996C29.8 23.0996 34.5 27.8196 34.5 33.5996C34.5 35.4196 33.02 36.8996 31.2 36.8996Z"
+        fill="white" data-sentry-element="path" data-sentry-source-file="IconEmptyDark.tsx"></path>
+</svg>

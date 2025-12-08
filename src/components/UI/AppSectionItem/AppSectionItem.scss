@@ -1,0 +1,15 @@
+.appSectionItem {
+  width: 88px;
+  overflow: hidden;
+  img {
+    width: 88px;
+    height: 88px;
+    border-radius: 1.25rem;
+  }
+
+  p {
+    white-space: nowrap;
+    font-size: 14px;
+    text-align: center;
+  }
+}

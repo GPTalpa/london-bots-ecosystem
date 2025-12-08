@@ -1,0 +1,6 @@
+<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg"
+    data-sentry-component="IconChevronBottom" data-sentry-source-file="IconChevronBottom.tsx"
+    style="color: rgb(110, 116, 133);">
+    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" data-sentry-element="path"
+        data-sentry-source-file="IconChevronBottom.tsx"></path>
+</svg>

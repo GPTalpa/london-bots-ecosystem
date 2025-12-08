@@ -1,0 +1,50 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  .embla {
+    overflow: hidden;
+  }
+
+  .embla__container {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px;
+  }
+
+  .embla__slide {
+    flex: 0 0 90%;
+    position: relative;
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 12px;
+    }
+  }
+
+  .carousel-dots {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    bottom: 5%;
+    left: 50%;
+    gap: 8px;
+
+    .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &--active {
+        background-color: #fff;
+        border-color: transparent;
+      }
+    }
+  }
+}

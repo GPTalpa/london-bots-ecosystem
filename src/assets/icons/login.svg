@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg"
+    data-sentry-component="IconUserDark" data-sentry-source-file="IconUserDark.tsx">
+    <path
+        d="M11.5558 1C8.58071 1 6.16895 3.39208 6.16895 6.34286C6.16895 9.29364 8.58071 11.6857 11.5558 11.6857C14.5308 11.6857 16.9426 9.29364 16.9426 6.34286C16.9426 3.39208 14.5308 1 11.5558 1Z"
+        fill="#6E7485" data-sentry-element="path" data-sentry-source-file="IconUserDark.tsx"></path>
+    <path
+        d="M14.7345 14.0625C12.6285 13.7292 10.4826 13.7292 8.37661 14.0625L8.15087 14.0983C5.18347 14.568 3 17.1066 3 20.0871C3 21.6957 4.31482 22.9998 5.93673 22.9998H17.1744C18.7963 22.9998 20.1111 21.6957 20.1111 20.0871C20.1111 17.1066 17.9276 14.568 14.9602 14.0983L14.7345 14.0625Z"
+        fill="#373948" data-sentry-element="path" data-sentry-source-file="IconUserDark.tsx"></path>
+</svg>

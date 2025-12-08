@@ -1,0 +1,15 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg"
+    data-sentry-component="IconApps" data-sentry-source-file="IconApps.tsx">
+    <path
+        d="M13.18 7.49967H10.4867C9.14667 7.49967 8.5 6.90634 8.5 5.67968V2.65301C8.5 1.42634 9.15333 0.833008 10.4867 0.833008H13.18C14.52 0.833008 15.1667 1.42634 15.1667 2.65301V5.67301C15.1667 6.90634 14.5133 7.49967 13.18 7.49967Z"
+        fill="#0085FF" data-sentry-element="path" data-sentry-source-file="IconApps.tsx"></path>
+    <path
+        d="M13.18 15.1667H10.4867C9.14667 15.1667 8.5 14.5133 8.5 13.18V10.4867C8.5 9.14667 9.15333 8.5 10.4867 8.5H13.18C14.52 8.5 15.1667 9.15333 15.1667 10.4867V13.18C15.1667 14.5133 14.5133 15.1667 13.18 15.1667Z"
+        fill="#0085FF" data-sentry-element="path" data-sentry-source-file="IconApps.tsx"></path>
+    <path
+        d="M5.5135 7.49967H2.82016C1.48016 7.49967 0.833496 6.90634 0.833496 5.67968V2.65301C0.833496 1.42634 1.48683 0.833008 2.82016 0.833008H5.5135C6.8535 0.833008 7.50016 1.42634 7.50016 2.65301V5.67301C7.50016 6.90634 6.84683 7.49967 5.5135 7.49967Z"
+        fill="#0085FF" data-sentry-element="path" data-sentry-source-file="IconApps.tsx"></path>
+    <path
+        d="M5.5135 15.1667H2.82016C1.48016 15.1667 0.833496 14.5133 0.833496 13.18V10.4867C0.833496 9.14667 1.48683 8.5 2.82016 8.5H5.5135C6.8535 8.5 7.50016 9.15333 7.50016 10.4867V13.18C7.50016 14.5133 6.84683 15.1667 5.5135 15.1667Z"
+        fill="#0085FF" data-sentry-element="path" data-sentry-source-file="IconApps.tsx"></path>
+</svg>

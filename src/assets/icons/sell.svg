@@ -1,0 +1,13 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg"
+    data-sentry-component="IconSellDark" data-sentry-source-file="IconSellDark.tsx">
+    <rect x="0.5" width="24" height="24" rx="8" fill="#6E7485" data-sentry-element="rect"
+        data-sentry-source-file="IconSellDark.tsx"></rect>
+    <path d="M16.5 24C20.9183 24 24.5 20.4183 24.5 16V8C24.5 16 18 24 8.5 24H16.5Z" fill="#373948"
+        data-sentry-element="path" data-sentry-source-file="IconSellDark.tsx"></path>
+    <path
+        d="M15.3846 12.7952H9.61538C9.14231 12.7952 8.75 12.4029 8.75 11.9298C8.75 11.4568 9.14231 11.0645 9.61538 11.0645H15.3846C15.8577 11.0645 16.25 11.4568 16.25 11.9298C16.25 12.4029 15.8577 12.7952 15.3846 12.7952Z"
+        fill="white" data-sentry-element="path" data-sentry-source-file="IconSellDark.tsx"></path>
+    <path
+        d="M12.5002 15.75C12.0271 15.75 11.6348 15.3577 11.6348 14.8846V9.11538C11.6348 8.64231 12.0271 8.25 12.5002 8.25C12.9732 8.25 13.3655 8.64231 13.3655 9.11538V14.8846C13.3655 15.3577 12.9732 15.75 12.5002 15.75Z"
+        fill="white" data-sentry-element="path" data-sentry-source-file="IconSellDark.tsx"></path>
+</svg>

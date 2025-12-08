@@ -1,0 +1,65 @@
+.footer {
+  width: 100%;
+  background-color: rgb(33, 34, 40);
+  padding: 1.875rem 1.25rem;
+  border-radius: 1.5rem 1.5rem 0px 0px;
+
+  &_firstLine {
+    display: flex;
+    justify-content: space-between;
+
+    &_information_list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); // 3 колонки
+      grid-template-areas:
+        "a b c"
+        "d e e"; // 2 элемента, можно ставить как угодно
+      gap: 16px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+      color: rgb(130, 135, 148);
+      margin-top: 1.25rem;
+      &-item1 {
+        grid-area: a;
+      }
+      &-item1 {
+        grid-area: b;
+      }
+      &-item1 {
+        grid-area: c;
+      }
+      &-item1 {
+        grid-area: d;
+      }
+      &-item1 {
+        grid-area: e;
+      }
+    }
+
+    &_payment-list {
+      margin-top: 1.25rem;
+      display: flex;
+      gap: 8px;
+
+      &-item {
+        width: 3.5rem;
+        height: 2.5rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0.5rem;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &_secondLine {
+    margin-top: 3rem;
+    color: rgb(130, 135, 148);
+    font-size: 0.8125rem;
+    font-weight: 500;
+  }
+}

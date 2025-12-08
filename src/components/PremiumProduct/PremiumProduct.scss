@@ -1,0 +1,19 @@
+.premiumProduct-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.premiumProduct-content {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  gap: 2rem 1.25rem;
+  flex-shrink: 0;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+}
+
+.premiumProduct-btn {
+  width: 100%;
+  background-color: rgb(33, 34, 40);
+}

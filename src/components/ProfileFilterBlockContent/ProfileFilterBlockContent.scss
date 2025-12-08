@@ -1,0 +1,13 @@
+.profileFilterBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+}

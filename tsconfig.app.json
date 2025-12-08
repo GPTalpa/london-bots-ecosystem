@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["DOM", "ES2022", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "moduleResolution": "Node",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@assets/*": ["assets/*"],
+      "@images/*": ["assets/images/*"],
+      "@icons/*": ["assets/icons/*"],
+      "@components/*": ["components/*"],
+      "@UI/*": ["components/UI/*"],
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"],
+      "@hooks/*": ["hooks/*"],
+      "@services/*": ["services/*"],
+      "@utils/*": ["utils/*"],
+      "@context/*": ["context/*"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Для references */
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": false
+  },
+  "include": ["src"]
+}
