@@ -13,13 +13,13 @@
   z-index: 100;
   gap: 2rem;
   border-bottom: 0.0625rem solid rgb(33, 34, 40);
-  
+
   @include md {
     height: 70px;
     padding: 0 1rem;
     gap: 1rem;
   }
-  
+
   &-dark {
     background-color: #14161a;
     color: #fff;
@@ -29,12 +29,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    
+
     @include md {
       gap: 12px;
     }
   }
-  
 
   .logo-link {
     width: 6.60714rem;
@@ -94,11 +93,11 @@
   &-search {
     position: relative;
     width: 100%;
-    
+
     @include md {
       display: none;
     }
-    
+
     input {
       height: 2.75rem;
       width: 100%;
@@ -212,11 +211,11 @@
   &-nav {
     display: flex;
     gap: 50px;
-    
+
     @include lg {
       gap: 30px;
     }
-    
+
     @include md {
       position: fixed;
       bottom: 0;
@@ -245,11 +244,11 @@
       gap: 7px;
       cursor: pointer;
       transition: opacity 0.2s;
-      
+
       &:hover {
         opacity: 0.8;
       }
-      
+
       @include md {
         flex-direction: column;
         justify-content: center;
@@ -258,12 +257,12 @@
         gap: 4px;
         flex: 1;
         min-width: 0;
-        
+
         img {
           width: 24px;
           height: 24px;
         }
-
+      }
       &-active {
         color: rgb(0, 133, 255);
       }
@@ -280,7 +279,7 @@
   .nav-item {
     color: rgb(130, 135, 148);
   }
-  
+
   .header-nav {
     @include md {
       background-color: #f5f5f5;

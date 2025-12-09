@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useRef, useEffect } from "react";
 
 import { useLocation } from "react-router-dom";
@@ -32,15 +31,12 @@ const Header = () => {
   const { searchQuery, setSearchQuery } = useSearch();
 
   // Объединяем все данные для поиска
-  const allData = useMemo(
-    () => [...mobileGame, ...appsMock, ...gameMock],
-    []
-  );
+  const allData = useMemo(() => [...mobileGame, ...appsMock, ...gameMock], []);
 
   // Фильтруем результаты поиска
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
-    
+
     return allData
       .filter((item) =>
         item.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -82,11 +78,12 @@ const Header = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
   const location = useLocation();
   const path = location.pathname;
+  console.log(path);
 
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setSearch(e.target.value);
+  // const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value);
 
   return (
     <header className={`header ${darkMode ? "header-dark" : "header-light"}`}>
@@ -129,7 +126,7 @@ const Header = () => {
             fill="currentColor"
           ></path>
         </svg>
-        
+
         {searchQuery && (
           <button className="clear-icon" onClick={handleClearSearch}>
             <svg
@@ -199,8 +196,8 @@ const Header = () => {
           Бонусы
         </a>
         <a
-          href="/topups/topup?slug=steam-cis"
-          className={`nav-item ${path === "" ? "nav-item-active" : ""}`}
+          href="/steam"
+          className={`nav-item ${path === "/steam" ? "nav-item-active" : ""}`}
         >
           <img src={steam} alt="" />
           Steam
