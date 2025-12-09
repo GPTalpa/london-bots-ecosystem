@@ -1,0 +1,112 @@
+// Breakpoints
+$breakpoint-xs: 480px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// Responsive mixins
+@mixin xs {
+  @media (max-width: #{$breakpoint-xs}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$breakpoint-sm}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$breakpoint-lg}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$breakpoint-xl}) {
+    @content;
+  }
+}
+
+@mixin min-md {
+  @media (min-width: #{$breakpoint-md + 1}) {
+    @content;
+  }
+}
+
+@mixin min-lg {
+  @media (min-width: #{$breakpoint-lg + 1}) {
+    @content;
+  }
+}
+
+// Grid responsive mixin
+@mixin responsive-grid($mobile: 1, $tablet: 2, $desktop: 4) {
+  display: grid;
+  gap: 1rem;
+  
+  grid-template-columns: repeat($mobile, 1fr);
+  
+  @include sm {
+    grid-template-columns: repeat($mobile, 1fr);
+  }
+  
+  @include md {
+    grid-template-columns: repeat($tablet, 1fr);
+  }
+  
+  @include min-lg {
+    grid-template-columns: repeat($desktop, 1fr);
+  }
+}
+
+// Flex responsive mixin
+@mixin flex-responsive($direction-mobile: column, $direction-desktop: row) {
+  display: flex;
+  flex-direction: $direction-mobile;
+  
+  @include min-md {
+    flex-direction: $direction-desktop;
+  }
+}
+
+// Hide on mobile
+@mixin hide-mobile {
+  @include md {
+    display: none !important;
+  }
+}
+
+// Show only on mobile
+@mixin show-mobile {
+  display: none;
+  
+  @include md {
+    display: block;
+  }
+}
+
+// Container padding responsive
+@mixin container-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+  @include sm {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  @include min-md {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

@@ -1,3 +1,5 @@
+@use "@/styles/mixins.scss" as *;
+
 .carousel {
   position: relative;
   width: 100%;
@@ -11,15 +13,37 @@
     display: flex;
     gap: 20px;
     padding: 0 40px;
+    
+    @include md {
+      gap: 12px;
+      padding: 0 20px;
+    }
+    
+    @include sm {
+      padding: 0 10px;
+    }
   }
 
   .embla__slide {
     flex: 0 0 90%;
     position: relative;
+    
+    @include md {
+      flex: 0 0 95%;
+    }
+    
+    @include sm {
+      flex: 0 0 100%;
+    }
+    
     img {
       display: block;
       width: 100%;
       border-radius: 12px;
+      
+      @include md {
+        border-radius: 8px;
+      }
     }
   }
 
@@ -31,6 +55,11 @@
     bottom: 5%;
     left: 50%;
     gap: 8px;
+    
+    @include md {
+      bottom: 3%;
+      gap: 6px;
+    }
 
     .dot {
       width: 14px;
@@ -40,6 +69,11 @@
       border: 1px solid white;
       cursor: pointer;
       transition: background-color 0.3s;
+      
+      @include md {
+        width: 10px;
+        height: 10px;
+      }
 
       &--active {
         background-color: #fff;

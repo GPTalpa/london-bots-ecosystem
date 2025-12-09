@@ -1,25 +1,59 @@
+@use "@/styles/mixins.scss" as *;
+
 .footer {
   width: 100%;
   background-color: rgb(33, 34, 40);
   padding: 1.875rem 1.25rem;
   border-radius: 1.5rem 1.5rem 0px 0px;
+  
+  @include md {
+    padding: 1.5rem 1rem;
+    border-radius: 1rem 1rem 0px 0px;
+  }
 
   &_firstLine {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
+    
+    @include lg {
+      flex-direction: column;
+      gap: 2rem;
+    }
 
     &_information_list {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); // 3 колонки
+      grid-template-columns: repeat(3, 1fr);
       grid-template-areas:
         "a b c"
-        "d e e"; // 2 элемента, можно ставить как угодно
+        "d e e";
       gap: 16px;
       font-size: 0.875rem;
       font-weight: 500;
       line-height: 1.5rem;
       color: rgb(130, 135, 148);
       margin-top: 1.25rem;
+      
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+          "a b"
+          "c d"
+          "e e";
+        gap: 12px;
+        font-size: 0.8125rem;
+      }
+      
+      @include sm {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "a"
+          "b"
+          "c"
+          "d"
+          "e";
+        gap: 10px;
+      }
       &-item1 {
         grid-area: a;
       }
@@ -41,6 +75,7 @@
       margin-top: 1.25rem;
       display: flex;
       gap: 8px;
+      flex-wrap: wrap;
 
       &-item {
         width: 3.5rem;
@@ -52,6 +87,11 @@
         justify-content: center;
         -webkit-box-align: center;
         align-items: center;
+        
+        @include sm {
+          width: 3rem;
+          height: 2.25rem;
+        }
       }
     }
   }
@@ -61,5 +101,11 @@
     color: rgb(130, 135, 148);
     font-size: 0.8125rem;
     font-weight: 500;
+    
+    @include md {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+    }
   }
 }
