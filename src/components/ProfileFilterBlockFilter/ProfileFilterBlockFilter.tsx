@@ -15,7 +15,7 @@ const ProfileFilterBlockFilter = ({ active }: IProfileFilterBlockFilter) => {
   return (
     <div className="pfb_filters">
       <div className="pfb_filters--first-line">
-        <InputSearch />
+        <InputSearch placeholder={"Поиск по товарам"} />
         <AppSelector />
         {active === 0 && <StatusSelect type="products" />}
         {active === 1 && <StatusSelect type="orders" />}

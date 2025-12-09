@@ -1,0 +1,42 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 0.625rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 2.75rem;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  white-space: nowrap;
+  background: #212228;
+  transition: 0.2s ease;
+  border-radius: 3.25rem;
+  img {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    background: rgba(25, 118, 210, 0.08);
+  }
+
+  &.active {
+    background: #1976d2;
+  }
+}

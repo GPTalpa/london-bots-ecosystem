@@ -111,6 +111,10 @@
       font-weight: 500;
       font-size: 12px;
       gap: 7px;
+
+      &-active {
+        color: rgb(0, 133, 255);
+      }
     }
   }
 }
