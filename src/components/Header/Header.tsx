@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useMemo, useRef, useEffect } from "react";
 import "./Header.scss";
 
 import { useTheme } from "@/hooks/useTheme";
+import { useSearch } from "@/hooks/useSearch";
 import Popup from "@UI/Popup";
 import AppsSectionBtn from "../UI/AppsSectionBtn";
 import logoLight from "@images/logo-light-mode.webp";
@@ -12,15 +13,71 @@ import chats from "@icons/chats.svg";
 import login from "@icons/login.svg";
 import sell from "@icons/sell.svg";
 import steam from "@icons/steam.svg";
-
 import tg from "@icons/tg.svg";
-const Header = () => {
-  const [search, setSearch] = useState("");
-  const [open, setOpen] = useState(false);
-  const { darkMode, toggleTheme } = useTheme();
 
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setSearch(e.target.value);
+// Импорт mock данных для поиска
+import { mobileGame } from "@/components/AppsSection/mobileGame.mock";
+import { appsMock } from "@/components/AppsSection/apps.mock";
+import { gameMock } from "@/components/AppsSection/game.mock";
+
+const Header = () => {
+  const [open, setOpen] = useState(false);
+  const [showResults, setShowResults] = useState(false);
+  const searchRef = useRef<HTMLDivElement>(null);
+  const { darkMode, toggleTheme } = useTheme();
+  const { searchQuery, setSearchQuery } = useSearch();
+
+  // Объединяем все данные для поиска
+  const allData = useMemo(
+    () => [...mobileGame, ...appsMock, ...gameMock],
+    []
+  );
+
+  // Фильтруем результаты поиска
+  const searchResults = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    
+    return allData
+      .filter((item) =>
+        item.title.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+      .slice(0, 8); // Ограничиваем до 8 результатов
+  }, [searchQuery, allData]);
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
+    setShowResults(true);
+  };
+
+  const handleSearchFocus = () => {
+    if (searchQuery.trim()) {
+      setShowResults(true);
+    }
+  };
+
+  const handleResultClick = () => {
+    setShowResults(false);
+  };
+
+  const handleClearSearch = () => {
+    setSearchQuery("");
+    setShowResults(false);
+  };
+
+  // Закрытие выпадающего списка при клике вне области
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        searchRef.current &&
+        !searchRef.current.contains(event.target as Node)
+      ) {
+        setShowResults(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header className={`header ${darkMode ? "header-dark" : "header-light"}`}>
@@ -38,11 +95,12 @@ const Header = () => {
         </label>
       </div>
 
-      <div className="header-search">
+      <div className="header-search" ref={searchRef}>
         <input
           type="text"
-          value={search}
+          value={searchQuery}
           onChange={handleSearchChange}
+          onFocus={handleSearchFocus}
           placeholder="Поиск игр и приложений"
         />
         <svg
@@ -62,6 +120,49 @@ const Header = () => {
             fill="currentColor"
           ></path>
         </svg>
+        
+        {searchQuery && (
+          <button className="clear-icon" onClick={handleClearSearch}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM11.2 10.1L10.1 11.2L8 9.1L5.9 11.2L4.8 10.1L6.9 8L4.8 5.9L5.9 4.8L8 6.9L10.1 4.8L11.2 5.9L9.1 8L11.2 10.1Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        )}
+
+        {showResults && searchResults.length > 0 && (
+          <div className="search-dropdown">
+            {searchResults.map((item) => (
+              <a
+                key={item.slug}
+                href={`/sell/${item.slug}`}
+                className="search-result-item"
+                onClick={handleResultClick}
+              >
+                <img
+                  src={item.icon_url}
+                  alt={item.title}
+                  className="search-result-icon"
+                />
+                <span className="search-result-title">{item.title}</span>
+              </a>
+            ))}
+          </div>
+        )}
+
+        {showResults && searchQuery && searchResults.length === 0 && (
+          <div className="search-dropdown">
+            <div className="search-no-results">Ничего не найдено</div>
+          </div>
+        )}
       </div>
 
       <nav className="header-nav">
