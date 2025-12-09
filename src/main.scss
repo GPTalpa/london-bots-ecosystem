@@ -88,3 +88,32 @@ h4 {
     background: #f2f2f7;
   }
 }
+
+.back_header {
+  align-items: center;
+  gap: 1.5rem;
+
+  .backArrow {
+    background: rgb(33, 34, 40);
+    height: 3.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: unset;
+    width: 2.625rem;
+    height: 2.625rem;
+    max-height: 2.625rem;
+    padding: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    img {
+      width: 14px;
+      height: 12px;
+    }
+  }
+}

@@ -122,4 +122,3 @@ export default function Sell() {
             </div>
         </div>
     );
-}

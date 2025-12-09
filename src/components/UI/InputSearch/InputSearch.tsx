@@ -2,10 +2,14 @@ import "./InputSearch.scss";
 
 import search from "@icons/search.svg";
 
-const InputSearch = () => (
+type IInputSearch = {
+  placeholder: string;
+};
+
+const InputSearch = ({ placeholder }: IInputSearch) => (
   <div className="pfb_input">
     <img src={search} alt="" />
-    <input placeholder="Поиск по товарам..." />
+    <input placeholder={placeholder} />
   </div>
 );
 

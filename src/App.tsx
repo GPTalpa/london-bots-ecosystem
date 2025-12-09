@@ -4,6 +4,7 @@ import Footer from "@components/Footer";
 import Home from "@pages/Home";
 import Profile from "@pages/Profile";
 import Sell from "@pages/Sell";
+import Bonuses from "@pages/Bonuses";
 
 import ThemeProvider from "@/context/Theme/ThemeProvider";
 import SearchProvider from "@/context/Search/SearchProvider";

@@ -1,4 +1,8 @@
+
 import React, { useState, useMemo, useRef, useEffect } from "react";
+
+import { useLocation } from "react-router-dom";
+
 import "./Header.scss";
 
 import { useTheme } from "@/hooks/useTheme";
@@ -78,11 +82,16 @@ const Header = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+  const location = useLocation();
+  const path = location.pathname;
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setSearch(e.target.value);
 
   return (
     <header className={`header ${darkMode ? "header-dark" : "header-light"}`}>
       <div className="header-left">
-        <a href="/" className="logo-link">
+        <a href="/" className="logo-link ">
           <img
             src={darkMode ? logoDark : logoLight}
             alt="app logo"
@@ -166,19 +175,33 @@ const Header = () => {
       </div>
 
       <nav className="header-nav">
-        <a href="/sell" className="nav-item">
+        <a
+          href="/sell"
+          className={`nav-item ${path === "/sell" ? "nav-item-active" : ""}`}
+        >
           <img src={sell} alt="" />
           Продать
         </a>
-        <a href="/chats" className="nav-item">
+        <a
+          href="/chats"
+          className={`nav-item ${path === "/chats" ? "nav-item-active" : ""}`}
+        >
           <img src={chats} alt="" />
           Чаты
         </a>
-        <a href="/bonus-center" className="nav-item">
+        <a
+          href="/bonus-center"
+          className={`nav-item ${
+            path === "/bonus-center" ? "nav-item-active" : ""
+          }`}
+        >
           <img src={bonuses} alt="" />
           Бонусы
         </a>
-        <a href="/topups/topup?slug=steam-cis" className="nav-item">
+        <a
+          href="/topups/topup?slug=steam-cis"
+          className={`nav-item ${path === "" ? "nav-item-active" : ""}`}
+        >
           <img src={steam} alt="" />
           Steam
         </a>
