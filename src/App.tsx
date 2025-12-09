@@ -22,6 +22,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/sell" element={<Sell />} />
+              <Route path="/bonus-center" element={<Bonuses />} />
             </Routes>
           </main>
           <Footer />
