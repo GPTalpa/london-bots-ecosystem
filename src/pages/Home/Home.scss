@@ -1,15 +1,37 @@
+@use "@/styles/mixins.scss" as *;
+
 .home {
   padding: 20px;
   display: grid;
   gap: 20px;
+  
+  @include md {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  @include sm {
+    padding: 10px;
+    gap: 12px;
+  }
+  
   &__title {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 12px;
+    
+    @include md {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
   }
 
   &__text {
     font-size: 18px;
     opacity: 0.7;
+    
+    @include md {
+      font-size: 16px;
+    }
   }
 }

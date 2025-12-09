@@ -1,15 +1,46 @@
+@use "@/styles/mixins.scss" as *;
+
 .appSectionItem {
   width: 88px;
   overflow: hidden;
+  
+  @include md {
+    width: 72px;
+  }
+  
+  @include sm {
+    width: 64px;
+  }
+  
   img {
     width: 88px;
     height: 88px;
     border-radius: 1.25rem;
+    
+    @include md {
+      width: 72px;
+      height: 72px;
+      border-radius: 1rem;
+    }
+    
+    @include sm {
+      width: 64px;
+      height: 64px;
+      border-radius: 0.875rem;
+    }
   }
 
   p {
     white-space: nowrap;
     font-size: 14px;
     text-align: center;
+    
+    @include md {
+      font-size: 12px;
+    }
+    
+    @include sm {
+      font-size: 11px;
+    }
   }
 }

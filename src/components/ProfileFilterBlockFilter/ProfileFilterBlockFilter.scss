@@ -1,9 +1,21 @@
+@use "@/styles/mixins.scss" as *;
+
 .pfb_filters {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  
+  @include lg {
+    flex-direction: column;
+  }
 
   &--first-line {
     gap: 10px;
     display: flex;
+    flex-wrap: wrap;
+    
+    @include md {
+      gap: 8px;
+    }
   }
 }
